@@ -32,9 +32,9 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
     try {
       // Get webhook URL from environment variables
       const webhookUrls = {
-        add: import.meta.env.REACT_APP_ADD_URL,
-        subtract: import.meta.env.REACT_APP_SUBTRACT_URL,
-        get: import.meta.env.REACT_APP_GET_URL
+        add: import.meta.env.VITE_ADD_URL,
+        subtract: import.meta.env.VITE_SUBTRACT_URL,
+        get: import.meta.env.VITE_GET_URL
       };
 
       const webhookUrl = webhookUrls[action];
